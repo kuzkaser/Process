@@ -1,0 +1,31 @@
+import os
+import psutil
+
+process = psutil.Process(os.getpid())
+
+print('process = ', process)
+print('process.pid = ', process.pid)
+print('process.ppid = ', process.ppid())
+print('process.name = ', process.name())
+print('process.is_running = ', process.is_running())
+print('process.status = ', process.status())
+print('process.username = ', process.username())
+# print('process.uids = ', process.uids())
+print('process.create_time = ', process.create_time())
+print('process.cpu_percent = ', process.cpu_percent())
+print('process.cpu_times = ', process.cpu_times())
+
+print('process.parents = ', process.parents())
+print('process.children = ', process.children())
+
+# print('process.terminal = ', process.terminal())
+print('process.cmdline = ', process.cmdline())
+print('process.environ = ', process.environ())
+
+print('process.connections = ', process.connections())
+print('process.cwd = ', process.cwd())
+# print('process.gids = ', process.gids())
+print('process.memory_full_info = ', process.memory_full_info())
+# print('process.num_fds = ', process.num_fds())
+print('process.num_threads = ', process.num_threads())
+print('process.open_files = ', process.open_files())
